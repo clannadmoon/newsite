@@ -1,0 +1,347 @@
+.solution_header{
+    height: 677px;
+    background: url("./../imgs/aboutUs/hxtd.png") no-repeat center;
+    background-size: cover;
+}
+.solution_header h2{
+    margin: 0 !important;
+    padding-top: 277px;
+    font-size: 57px;
+    color: #F5F3F3;
+    font-weight: 400;
+    line-height: 70px;
+}
+.solution-item{
+    position: fixed;
+    z-index: 999;
+    width:100%;
+    height:100%;
+    top: 0;
+    background: #FFFFFF;
+    overflow: hidden;
+    zoom:1;
+    display: none;
+}
+
+
+.jz{
+    position: relative;
+    right: -90%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.jz a{
+    color: #ffffff;
+}
+
+
+
+
+.description{
+    height: calc(100% - 124px);
+}
+.description .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+.description .container:before{
+    content:none;
+}
+.description .container .rw_left{
+    width: calc(100% - 676px);
+}
+.description .container .rw_left h2{
+    font-size: 48px;
+    color: rgba(43, 45, 49, 1);
+    margin: 0;
+    line-height: 48px;
+}
+.description .container .rw_left hr{
+    width: 69px;
+    height: 3px;
+    background: rgba(43,45,49,1);
+    display: inline-block;
+    margin-bottom: 104px;
+    margin-top: 34px;
+}
+.description .container .rw_left .name{
+    display: inline-block;
+    font-size: 48px;
+    color: rgba(43,45,49,1);
+    font-weight: bold;
+}
+.description .container .rw_left .zw{
+    margin-bottom: 44px;
+    display: inline-block;
+    font-size: 26px;
+    color: rgba(43, 45, 49, 1);
+    font-weight: 400;
+}
+.description .container .rw_left .jj{
+     margin-bottom: 130px;
+     color: rgba(43, 45, 49, 1);
+     font-size: 18px;
+     line-height: 32px;
+     display: inline-block;
+}
+.description .container .rw_right{
+    width: 676px;
+    height: 639px;
+}
+.cutOffRule{
+    width: 100%;
+    height:48px;
+    background-color: #000000;
+}
+.team{
+    padding-top:  61px;
+    padding-bottom:133px ;
+    background: #F5F3F3;
+}
+.team ul li{
+    display: inline-block;
+    width: 33%;
+}
+.team h4{
+
+    margin-bottom: 75px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F50E3C;
+}
+.r1{
+    display: inline-block;
+    width: 380px;
+    height: 460px;
+    background: #FF6A7E url("./../imgs/aboutUs/r1.png") no-repeat center;
+    background-size: contain;
+    transition:all ease-in-out 0.5s;
+    cursor: pointer;
+}
+.r2{
+    display: inline-block;
+    width: 380px;
+    height: 460px;
+    background: #FF6A7E url("./../imgs/aboutUs/r2.png") no-repeat center;
+    background-size: contain;
+    transition:all ease-in-out 0.5s;
+    cursor: pointer;
+}
+.r3{
+    display: inline-block;
+    width: 380px;
+    height: 460px;
+    background: #FF6A7E url("./../imgs/aboutUs/r3.png") no-repeat center;
+    background-size: contain;
+    transition:all ease-in-out 0.5s;
+    cursor: pointer;
+}
+.r1:hover,.r2:hover,.r3:hover,.r4:hover,.r5:hover{
+    transform:scale(1.05);
+}
+.team h3{
+    margin-top: 52px;
+    margin-bottom: 22px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+.team p{
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.member{
+    padding-top:  110px;
+    padding-bottom:75px ;
+    background: #ffffff;
+}
+.member ul li{
+    display: inline-block;
+    width: 24%;
+}
+.member h4{
+    margin-bottom: 75px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F50E3C;
+}
+.r4{
+    display: inline-block;
+    width: 283px;
+    height: 344px;
+    background:  url("./../imgs/aboutUs/r4.png") no-repeat center;
+    background-size: contain;
+    transition:all ease-in-out 0.5s;
+    cursor: pointer;
+}
+.r5{
+    display: inline-block;
+    width: 283px;
+    height: 344px;
+    background:  url("./../imgs/aboutUs/r5.png") no-repeat center;
+    background-size: contain;
+    transition:all ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.member h3{
+    margin-top: 31px;
+    margin-bottom: 22px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+.member p{
+    margin-bottom: 109px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+}
+
+
+
+.cooperativeEnterprise{
+    padding-top:  69px;
+    padding-bottom:75px ;
+    background: #ffffff;
+}
+.cooperativeEnterprise ul li{
+    display: flex;
+    width: 22%;
+    float: left;
+    border: 1px solid rgba(230, 230, 230, 1);
+    margin-right: 32px;
+    margin-bottom: 62px;
+    height: 143.5px;
+}
+.cooperativeEnterprise ul li img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.cooperativeEnterprise h4{
+    margin-bottom: 101px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F50E3C;
+}
+.item div{
+    display: inline-block;
+    width: 211px;
+    height: 51px;
+    background-size: contain;
+
+}
+.footer_item{
+    text-align: center;
+    position: relative;
+    transition: opacity 2s;
+    height: 500px;
+}
+.footer_hxtd:hover .ms_div,
+.footer_jtjg:hover .ms_div,
+.footer_gsjj:hover .ms_div {
+    opacity: 1;
+}
+.footer_item h2{
+    font-weight: 400;
+    font-size: 36px;
+    color: #ffffff;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 34%;
+    transform: translate(-50%,-50%);
+}
+.footer_item .btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 57px;
+    height: 57px;
+    background: url("./../imgs/aboutUs/youjiantou.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+.footer_item .ms_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .8s;
+    background: rgba(255, 0, 51, .8);
+    opacity: 0;
+}
+.footer_item .footer_gsjj{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background: url('./../imgs/aboutUs/gsjj.png') no-repeat center;
+    background-size: cover;
+}
+.footer_item .footer_jtjg{
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background: url('./../imgs/aboutUs/jtjg.png') no-repeat center;
+    background-size: cover;
+}
+.footer_item .footer_hxtd{
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background: url('./../imgs/aboutUs/hxtd.png') no-repeat center;
+    background-size: cover;
+}
+@font-face{
+    font-family: 'szzt';
+url('./../../../font/01数字字体.ttf') format('truetype')
+}
+
+.cd-close {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+    -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+    transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    z-index: 10;
+    position: fixed;
+
+    top: 140px;
+    right: 5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3) url(../imgs/cd-icon-close.svg) no-repeat center center;
+    /* image replacement */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+    -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+}

@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  width: 230px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ff4546;
+  border: none;
+  cursor: pointer; }
+
+.btn-huge {
+  width: 489px;
+  line-height: 31px;
+  height: 71px;
+  font-size: 18px; }
+
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,453 @@
+@charset "UTF-8";
+/**
+ 鼠标悬浮浮动
+ */
+/**
+定位左边
+ */
+/**
+定位右边
+ */
+/*
+  样式规范表
+*/
+html,
+body {
+  height: 100%;
+}
+
+#businessScope {
+  height: calc(100% - 124px);
+}
+#businessScope .img_1 {
+  cursor: pointer;
+  float: left;
+  width: 50%;
+  height: calc(100% / 2);
+  background: url("./../../imgs/businessScope/1.jpg") no-repeat center;
+  background-size: cover;
+}
+#businessScope .img_2 {
+  cursor: pointer;
+  float: left;
+  width: 50%;
+  height: calc(100% / 2);
+  background: url("./../../imgs/businessScope/p2.png") no-repeat center;
+  background-size: cover;
+}
+#businessScope .img_3 {
+  cursor: pointer;
+  float: left;
+  width: 50%;
+  height: calc(100% / 2);
+  background: url("./../../imgs/businessScope/p3.png") no-repeat center;
+  background-size: cover;
+}
+#businessScope .img_4 {
+  cursor: pointer;
+  float: left;
+  width: 50%;
+  height: calc(100% / 2);
+  background: url("./../../imgs/businessScope/p4.png") no-repeat center;
+  background-size: cover;
+}
+@keyframes mymove {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 60%;
+  }
+}
+@keyframes mymoveSpan {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 25%;
+  }
+}
+#businessScope .img_1,
+#businessScope .img_2,
+#businessScope .img_3,
+#businessScope .img_4 {
+  position: relative;
+  text-align: center;
+}
+#businessScope .img_1 label,
+#businessScope .img_2 label,
+#businessScope .img_3 label,
+#businessScope .img_4 label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+#businessScope .img_1 label h2,
+#businessScope .img_2 label h2,
+#businessScope .img_3 label h2,
+#businessScope .img_4 label h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 60%;
+  transform: translate(-50%, -50%);
+}
+#businessScope .img_1 label span,
+#businessScope .img_2 label span,
+#businessScope .img_3 label span,
+#businessScope .img_4 label span {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 30px;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 25%;
+  transform: translate(-50%, -50%);
+}
+#businessScope .img_1:hover label,
+#businessScope .img_2:hover label,
+#businessScope .img_3:hover label,
+#businessScope .img_4:hover label {
+  opacity: 1;
+  background: RGBA(206, 2, 44, 0.8);
+}
+#businessScope .img_1:hover label h2,
+#businessScope .img_2:hover label h2,
+#businessScope .img_3:hover label h2,
+#businessScope .img_4:hover label h2 {
+  opacity: 1;
+  animation: mymove 0.6s 1;
+}
+#businessScope .img_1:hover label span,
+#businessScope .img_2:hover label span,
+#businessScope .img_3:hover label span,
+#businessScope .img_4:hover label span {
+  opacity: 1;
+  animation: mymoveSpan 0.6s 1;
+}
+#businessScope .consultation {
+  z-index: 999;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 124px);
+  background: #ff0033;
+  left: 0;
+}
+#businessScope .consultation .container {
+  height: calc(100% - 149px);
+  text-align: left;
+}
+#businessScope .consultation .container .describe {
+  display: none;
+}
+#businessScope .consultation .container .describe h2 {
+  margin-top: 146px;
+  font-size: 44px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 68px;
+  margin-bottom: 29px;
+}
+#businessScope .consultation .container .describe span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 36px;
+  width: 910px;
+  display: inline-block;
+}
+#businessScope .consultation .container .describe .btn {
+  margin-top: 71px;
+}
+#businessScope .consultation .container .color_ff0033 {
+  color: #ff0033;
+}
+#businessScope .consultation .container .buttonStyle {
+  display: none;
+}
+#businessScope .consultation .container .buttonStyle h2 {
+  margin-top: 69px;
+  font-size: 44px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 43px;
+  margin-bottom: 63px;
+}
+#businessScope .consultation .container .buttonStyle div {
+  height: 264px;
+}
+#businessScope .consultation .container .buttonStyle div button {
+  margin-right: 104px;
+  margin-bottom: 17px;
+}
+#businessScope .consultation .container .buttonStyle .cz {
+  margin-top: 53px;
+}
+#businessScope .consultation .container .buttonStyle .cz .left-a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("./../../imgs/businessScope/left2.png") no-repeat center;
+  background-size: contain;
+  margin-right: 20px;
+}
+#businessScope .consultation .container .buttonStyle .cz .right-a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("./../../imgs/businessScope/right.png") no-repeat center;
+  background-size: contain;
+  margin-right: 55px;
+}
+#businessScope .consultation .container .buttonStyle .cz span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 54px;
+  vertical-align: text-bottom;
+  color: #ffffff;
+}
+#businessScope .consultation .container .buttonStyle .active {
+  border: 1px solid #ffffff;
+  color: #fff;
+  background: #ff0033;
+}
+#businessScope .consultation .container .leftForbidden {
+  background: url("./../../imgs/businessScope/left.png") no-repeat center !important;
+  background-size: contain;
+  margin-right: 20px;
+}
+#businessScope .consultation .container .rightForbidden {
+  background: url("./../../imgs/businessScope/right2.png") no-repeat center !important;
+  background-size: contain;
+  margin-right: 55px;
+}
+#businessScope .consultation .container .tableStyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  display: none;
+}
+#businessScope .consultation .container .tableStyle .title {
+  display: inline-block;
+  margin: 42px 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #ffffff;
+  width: 100%;
+}
+#businessScope .consultation .container .tableStyle .title div {
+  position: relative;
+  width: calc(100% - 144px);
+  background: #ffffff;
+  height: 1px;
+  top: -23px;
+  right: 0;
+  margin-right: 0;
+  left: 144px;
+}
+#businessScope .consultation .container .tableStyle .left-div {
+  float: left;
+  width: 50%;
+}
+#businessScope .consultation .container .tableStyle .left-div .title div {
+  width: 60%;
+}
+#businessScope
+  .consultation
+  .container
+  .tableStyle
+  .left-div
+  .myxz-ul
+  .myxz-item {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 44px;
+}
+#businessScope
+  .consultation
+  .container
+  .tableStyle
+  .left-div
+  .myxz-ul
+  .myxz-item
+  span:first-child {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 36px;
+}
+#businessScope
+  .consultation
+  .container
+  .tableStyle
+  .left-div
+  .myxz-ul
+  .myxz-item
+  p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 36px;
+  margin-top: 5px;
+}
+#businessScope .consultation .container .tableStyle .right-div {
+  float: right;
+  width: 50%;
+}
+#businessScope
+  .consultation
+  .container
+  .tableStyle
+  .right-div
+  .lxfs-ul
+  .lxfs-item {
+  margin-bottom: 25px;
+}
+#businessScope
+  .consultation
+  .container
+  .tableStyle
+  .right-div
+  .lxfs-ul
+  .lxfs-item
+  input {
+  border: 1px solid #ffffff;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-size: 18px;
+}
+#businessScope
+  .consultation
+  .container
+  .tableStyle
+  .right-div
+  .lxfs-ul
+  .lxfs-item
+  input::-webkit-input-placeholder {
+  color: #ff4546;
+}
+#businessScope
+  .consultation
+  .container
+  .tableStyle
+  .right-div
+  .lxfs-ul
+  .lxfs-item
+  .prov {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ff4546;
+  border: none;
+  padding-right: 14px;
+  /*将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: #ffffff url(./../../imgs/businessScope/xia1.png) no-repeat scroll
+    97% 50%;
+  background-blend-mode: multiply;
+}
+#businessScope
+  .consultation
+  .container
+  .tableStyle
+  .right-div
+  .lxfs-ul
+  .lxfs-item
+  .prov::-ms-expand {
+  display: none;
+}
+#businessScope
+  .consultation
+  .container
+  .tableStyle
+  .right-div
+  .lxfs-ul
+  .lxfs-item
+  .btn {
+  background: #000000;
+  color: #ffffff;
+}
+#businessScope .consultation .container .tableStyle .right-div .lxfs-ul .clear {
+  clear: both;
+}
+#businessScope
+  .consultation
+  .container
+  .tableStyle
+  .right-div
+  .lxfs-ul
+  .phone-item {
+  background: #ffffff;
+}
+#businessScope
+  .consultation
+  .container
+  .tableStyle
+  .right-div
+  .lxfs-ul
+  .phone-item
+  input {
+  width: 230px;
+  float: left;
+}
+#businessScope
+  .consultation
+  .container
+  .tableStyle
+  .right-div
+  .lxfs-ul
+  .phone-item
+  .btn {
+  width: 140px;
+  float: left;
+  background: #ff0033;
+  height: 51px;
+}
+#businessScope .consultation .container .tableStyle .right-div .tip {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 36px;
+}
+#businessScope .consultation .close-div {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+}
+#businessScope .consultation .close-div .icon-close {
+  position: absolute;
+  right: 0;
+  bottom: 58px;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: url("./../../imgs/icon-close.png") no-repeat center;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=businessScope.css.map */

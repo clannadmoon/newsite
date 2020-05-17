@@ -1,0 +1,49 @@
+@import "./../scss/mixin.scss";
+@import "./../scss/config.scss";
+.header {
+  .nav-header {
+    background-color: #000000;
+    .container {
+      position: relative;
+      @include flex();
+      height: 124px;
+      &:before,
+      &:after {
+        content: none;
+      }
+      .header-menu {
+        display: inline-block;
+        width: 700px;
+        div {
+          display: inline-block;
+          color: $colorG;
+          font-weight: 400;
+          font-size: 18px;
+          //line-height: 128px;
+          margin-right: 43px;
+          span {
+            cursor: pointer;
+            &:hover {
+              //content:'';
+              border-bottom: 2px solid #ff0132;
+              padding-bottom: 5px;
+            }
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        .active {
+          border-bottom: 2px solid #ff0132;
+          padding-bottom: 5px;
+        }
+
+        .item-language {
+          font-weight: 400;
+          font-size: 16px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

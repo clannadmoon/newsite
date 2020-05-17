@@ -1,0 +1,97 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, width=device-width"
+    />
+    <style type="text/css">
+      body,
+      html,
+      #container {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+      }
+    </style>
+    <title>深圳福田办公地点</title>
+  </head>
+  <body>
+    <div id="container" tabindex="0"></div>
+    <div id="box">
+      <button id="btn1">绑定事件</button>
+      <button id="btn2">解除绑定</button>
+    </div>
+   
+    <script type="text/javascript">
+      window.init = function(){
+          var map = new AMap.Map('container',{
+              center:[114.067548,22.532229],
+              resizeEnable:true//不开启则无法触发resize事件
+              zoom: 9999, //设置地图的缩放级别
+          });
+          var marker = new AMap.Marker({
+              position: new AMap.LngLat(114.067548,22.532229),
+              offset: new AMap.Pixel(-15, -90),
+            //   icon: './../imgs/contactUs/dingwei3.png', // 添加 Icon 图标 URL
+              title: '深圳福田办公地点'
+          });
+          map.add(marker);
+      }
+    </script>
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=933238f70194c0578b3bf81015e2725b&callback=init"></script>
+
+  </body>
+</html> -->
+
+<!--
+ * @Description: 这里输入文件功能
+ * @Author: zhoupeng
+ * @Date: 2020-02-19 14:23:48
+ * @LastEditTime: 2020-05-17 18:08:30
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, width=device-width"
+    />
+    <style type="text/css">
+      body,
+      html,
+      #container {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+      }
+    </style>
+    <title>深圳福田办公地点</title>
+  </head>
+  <body>
+    <div id="container" tabindex="0"></div>
+    <!--<script src="https://webapi.amap.com/js/require.js" data-main="./require-init"></script>-->
+    <script type="text/javascript">
+      window.init = function () {
+        var map = new AMap.Map("container", {
+          center: [114.067548, 22.532229],
+          zoom: 9999 //设置地图的缩放级别
+        });
+        var marker = new AMap.Marker({
+          position: new AMap.LngLat(114.067548, 22.532229),
+          //offset: new AMap.Pixel(-10, -100),
+          //   icon: "./../imgs/contactUs/dingwei6.png", // 添加 Icon 图标 URL
+          title: "深圳福田办公地点"
+        });
+
+        map.add(marker);
+      };
+    </script>
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=933238f70194c0578b3bf81015e2725b&callback=init"></script>
+  </body>
+</html>

@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/**
+ 鼠标悬浮浮动
+ */
+/**
+定位左边
+ */
+/**
+定位右边
+ */
+.gywm_header {
+  height: 677px;
+  background: url("./../../imgs/contactUs/gywm.png") no-repeat center;
+  background-size: auto;
+}
+.gywm_header h2 {
+  margin: 0 !important;
+  padding-top: 232px;
+  font-size: 58px;
+  color: #f5f3f3;
+  font-weight: bold;
+  line-height: 77px;
+}
+
+.gywm_ms .container h2 {
+  color: #ff0033 !important;
+  margin: 0 !important;
+  font-size: 66px !important;
+  font-weight: 800 !important;
+  line-height: 66px !important;
+  margin-top: 99px !important;
+  z-index: 10;
+  position: relative;
+}
+.gywm_ms .container .fgx {
+  width: 141px;
+  height: 14px;
+  background: #e9e9e9;
+  position: relative;
+  margin-left: 0;
+  margin-top: -6px;
+}
+.gywm_ms .container span {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 300;
+  margin-top: 57px;
+  line-height: 27px;
+  display: inline-block;
+}
+.gywm_ms .container p {
+  font-size: 30px;
+  color: #ff0033;
+  font-weight: bold;
+  margin-top: 61px;
+  line-height: 78px;
+}
+.gywm_ms .container .address {
+  margin-top: 47px;
+}
+.gywm_ms .container .address .address-item {
+  width: calc((100% - 60px) / 3);
+  float: left;
+  background: #f3f3f3ff;
+  height: 220px;
+  text-align: center;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  color: #333333;
+  line-height: 24px;
+  cursor: pointer;
+}
+.gywm_ms .container .address .address-item:hover {
+  background: #ff0033;
+  color: #ffffff;
+}
+.gywm_ms .container .address .address-item:hover span {
+  color: #ffffff !important;
+}
+.gywm_ms .container .address .address-item:hover .icon-address {
+  display: inline-block;
+  width: 31px;
+  height: 38px;
+  background: url("./../../imgs/contactUs/dingwei.png") no-repeat center;
+  background-size: auto;
+}
+.gywm_ms .container .address .address-item:nth-child(3n) {
+  margin-right: 0;
+}
+.gywm_ms .container .address .address-item .icon-address {
+  display: inline-block;
+  width: 31px;
+  height: 38px;
+  background: url("./../../imgs/contactUs/dingwei2.png") no-repeat center;
+  background-size: auto;
+  margin-top: 21px;
+  margin-bottom: 26px;
+}
+.gywm_ms .container .address .address-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.gywm_ms .container .address .address-item span:last-child {
+  width: 243px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 14px;
+}
+.gywm_ms .container .address .active {
+  background: #ff0033;
+  color: #ffffff;
+}
+.gywm_ms .container .address .active span {
+  color: #ffffff !important;
+}
+.gywm_ms .container .address .active .icon-address {
+  display: inline-block;
+  width: 31px;
+  height: 38px;
+  background: url("./../../imgs/contactUs/dingwei.png") no-repeat center;
+  background-size: auto;
+}
+
+.gywm__ry {
+  background-color: #000000;
+  position: relative;
+}
+.gywm__ry .ry_left {
+  height: 564px;
+  width: 100% - 941px;
+  color: #f3f3f3;
+  margin-right: 941px;
+  /* background-color: red; */
+}
+.gywm__ry .ry_left h2 {
+  margin-top: 75px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.gywm__ry .ry_left .fjx {
+  width: 24px;
+  height: 2px;
+  background-color: #f3f3f3;
+  margin-top: 32px;
+  margin-bottom: 25px;
+}
+.gywm__ry .ry_left span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  display: inline-block;
+  width: 410px;
+}
+.gywm__ry .ry_left span:last-child {
+  margin-top: 12px;
+}
+.gywm__ry .ry_left h1 {
+  margin-top: 75px;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: szzt, serif;
+}
+.gywm__ry .ry_left h1 sup {
+  font-size: 40px;
+}
+.gywm__ry .ry_right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* // float: right; */
+  display: inline-block;
+  width: 941px;
+  height: 564px;
+  background: url("./../../imgs/contactUs/bg_bg.png") no-repeat center;
+  background-size: auto;
+}
+
+.btn {
+  display: inline-block;
+  width: 230px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+.gywm__zpgw .container {
+  margin-bottom: 160px;
+}
+.gywm__zpgw .container h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff0033ff;
+  line-height: 78px;
+  margin-top: 96px;
+  margin-bottom: 47px;
+}
+.gywm__zpgw .container .zpgw_item {
+  position: relative;
+  padding: 36px 0;
+  border-top: 1px solid #7d7d7d;
+}
+.gywm__zpgw .container .zpgw_item:last-child {
+  border-bottom: 1px solid #7d7d7d;
+}
+.gywm__zpgw .container .zpgw_item h2 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #343434;
+  line-height: 36px;
+}
+.gywm__zpgw .container .zpgw_item .icon-close {
+  position: absolute;
+  right: 33px;
+  top: 42px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("./../../imgs/contactUs/icon-close.png") no-repeat center;
+  background-size: auto;
+}
+.gywm__zpgw .container .zpgw_item .zpgw_pr {
+  width: 1200px;
+  display: inline-block;
+  height: 0;
+  opacity: 0;
+  margin-top: 0;
+  transition: all 0.1s;
+}
+.gywm__zpgw .container .zpgw_item .zpgw_pr .zpgw_left {
+  float: left;
+  width: 50%;
+}
+.gywm__zpgw .container .zpgw_item .zpgw_pr .zpgw_left h4 {
+  font-size: 24px;
+  line-height: 36px;
+  color: #343434;
+}
+.gywm__zpgw .container .zpgw_item .zpgw_pr .zpgw_left span {
+  font-size: 18px;
+  line-height: 36px;
+  color: #343434;
+  width: 79%;
+  display: inline-block;
+}
+.gywm__zpgw .container .zpgw_item .zpgw_pr .zpgw_right {
+  float: left;
+  width: 50%;
+}
+.gywm__zpgw .container .zpgw_item .zpgw_pr .zpgw_right input {
+  width: 100%;
+  height: 50px;
+  background-color: #eeeeee;
+  border: none;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  color: #343434;
+  font-size: 18px;
+}
+.gywm__zpgw .container .zpgw_item .zpgw_pr .zpgw_right textarea {
+  width: 100%;
+  height: 190px;
+  background-color: #eeeeee;
+  border: none;
+  resize: none;
+  padding: 20px;
+  color: #343434;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.gywm__zpgw .container .zpgw_item .zpgw_pr .zpgw_right span {
+  font-size: 18px;
+  font-weight: 300;
+  color: #343434;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.gywm__zpgw .container .zpgw_item .zpgw_pr .zpgw_right span .span_email {
+  color: #ff4546;
+}
+.gywm__zpgw .container .zpgw_item .open {
+  height: 100%;
+  opacity: 1;
+  margin-top: 90px;
+}
+.gywm__zpgw .container .zpgw_item .icon-open {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("./../../imgs/contactUs/icon-close2.png") no-repeat center;
+  background-size: auto;
+}
+
+.gywm_hzcx {
+  background-color: #222222;
+  padding: 170px 0;
+}
+.gywm_hzcx .container h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff0033;
+}
+.gywm_hzcx .container .hzcx_ul {
+  margin-top: 79px;
+}
+.gywm_hzcx .container .hzcx_ul .hzcx_item {
+  display: inline-block;
+  height: 80px;
+  width: calc((100% - 80px) / 2);
+  margin-right: 80px;
+  margin-bottom: 29px;
+  float: left;
+}
+.gywm_hzcx .container .hzcx_ul .hzcx_item input {
+  height: 80px;
+  width: 100%;
+  padding-left: 29px;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 36px;
+  background-color: #000000;
+  border: none;
+}
+.gywm_hzcx .container .hzcx_ul .hzcx_item:nth-child(2n) {
+  margin-right: 0px;
+}
+.gywm_hzcx .container .hzcx_ul .hzcx_item:nth-last-child(3) {
+  background-color: #000000;
+}
+.gywm_hzcx .container .hzcx_ul .hzcx_item:nth-last-child(3) input {
+  width: calc(100% - 230px);
+  float: left;
+}
+.gywm_hzcx .container .hzcx_ul .hzcx_item:nth-last-child(3) .btn {
+  float: right;
+  line-height: 36px;
+}
+.gywm_hzcx .container .hzcx_ul .hzcx_item:nth-last-child(2) {
+  width: 100%;
+  height: 278px;
+}
+.gywm_hzcx .container .hzcx_ul .hzcx_item:nth-last-child(2) textarea {
+  width: 100%;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 36px;
+  background-color: #000000;
+  border: none;
+  resize: none;
+  padding: 29px;
+  height: 278px;
+}
+.gywm_hzcx .container .hzcx_ul .hzcx_item:last-child {
+  width: 100%;
+  margin-top: 20px;
+}
+.gywm_hzcx .container .hzcx_ul .hzcx_item:last-child span {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 36px;
+  margin-left: 69px;
+}
+
+/*# sourceMappingURL=contactUs.css.map */
