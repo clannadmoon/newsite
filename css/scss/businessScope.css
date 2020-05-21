@@ -56,7 +56,7 @@ body {
     bottom: 0;
   }
   to {
-    bottom: 60%;
+    bottom: 70%;
   }
 }
 @keyframes mymoveSpan {
@@ -98,7 +98,7 @@ body {
   position: absolute;
   z-index: 1;
   left: 50%;
-  bottom: 60%;
+  bottom: 70%;
   transform: translate(-50%, -50%);
 }
 #businessScope .img_1 label span,
