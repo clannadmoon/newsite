@@ -13,6 +13,8 @@
 */
 #index {
   clear: left;
+  z-index: 10;
+  overflow: hidden;
 }
 #index .img_1,
 #index .img_2,

@@ -1,69 +1,72 @@
 @import "./../scss/mixin.scss";
 @import "./../scss/config.scss";
-#index{
+#index {
   clear: left;
-  .img_1,.img_2,.img_3,.img_4,.img_5,.img_6,.img_7{
+  z-index: 10;
+  overflow: hidden;
+  .img_1,
+  .img_2,
+  .img_3,
+  .img_4,
+  .img_5,
+  .img_6,
+  .img_7 {
     position: relative;
     text-align: center;
-    &:hover a{
+    &:hover a {
       opacity: 1;
     }
-    a{
+    a {
       cursor: pointer;
       display: inline-block;
       opacity: 0;
-      transition: opacity .8s;
+      transition: opacity 0.8s;
       width: 100%;
       height: 100%;
-      background: RGBA(206, 2, 44, .9);
-     label{
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%,-50%);
-       width: 100%;
-       cursor: pointer;
-       h2{
-         cursor: pointer;
-         font-size: 38px;
-         font-weight: 400;
-         color: #ffffff;
-       }
-       span{
-         cursor: pointer;
-         display: inline-block;
-         margin-top: 38px;
-         font-size: 20px;
-         font-weight: 400;
-         color: #ffffff;
-       }
-     }
+      background: RGBA(206, 2, 44, 0.9);
+      label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        cursor: pointer;
+        h2 {
+          cursor: pointer;
+          font-size: 38px;
+          font-weight: 400;
+          color: #ffffff;
+        }
+        span {
+          cursor: pointer;
+          display: inline-block;
+          margin-top: 38px;
+          font-size: 20px;
+          font-weight: 400;
+          color: #ffffff;
+        }
+      }
     }
-
   }
-  .img_1{
-    @include bgImg-fNoneSize(left,33.3%,595px,'./../../imgs/index/1.png')
+  .img_1 {
+    @include bgImg-fNoneSize(left, 33.3%, 595px, "./../../imgs/index/1.png");
   }
-  .img_2{
-    @include bgImg-fNoneSize(left,66.6%,595px,'./../../imgs/index/2.png')
+  .img_2 {
+    @include bgImg-fNoneSize(left, 66.6%, 595px, "./../../imgs/index/2.png");
   }
-  .img_3{
-    @include bgImg-fNoneSize(left,66.6%,560px,'./../../imgs/index/3.png')
+  .img_3 {
+    @include bgImg-fNoneSize(left, 66.6%, 560px, "./../../imgs/index/3.png");
   }
-  .img_4{
-    @include bgImg-fNoneSize(right,33.4%,900px,'./../../imgs/index/4.png')
+  .img_4 {
+    @include bgImg-fNoneSize(right, 33.4%, 900px, "./../../imgs/index/4.png");
   }
-  .img_5{
-    @include bgImg-fNoneSize(left,33.3%,700px,'./../../imgs/index/5.png')
+  .img_5 {
+    @include bgImg-fNoneSize(left, 33.3%, 700px, "./../../imgs/index/5.png");
   }
-  .img_6{
-    @include bgImg-fNoneSize(left,33.3%,340px,'./../../imgs/index/xq.png');
-
+  .img_6 {
+    @include bgImg-fNoneSize(left, 33.3%, 340px, "./../../imgs/index/xq.png");
   }
-  .img_7{
-    @include bgImg-fNoneSize(right,66.7%,360px,'./../../imgs/index/7.png')
+  .img_7 {
+    @include bgImg-fNoneSize(right, 66.7%, 360px, "./../../imgs/index/7.png");
   }
-
 }
-
-

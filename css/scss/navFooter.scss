@@ -2,6 +2,7 @@
 @import "./../scss/config.scss";
 .footer {
   background-color: black;
+  z-index: 100;
   .container {
     text-align: center;
     padding-top: 73px;
