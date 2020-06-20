@@ -45,6 +45,8 @@
 }
 .header .nav-header .nav-container .header-menu div span {
   cursor: pointer;
+  font-family: Microsoft Yahei, serif;
+  line-height: 20px;
 }
 .header .nav-header .nav-container .header-menu div span:hover {
   border-bottom: 2px solid #ff0132;
