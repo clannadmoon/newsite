@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+dl,
+dt,
+a,
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html,
+body {
+  font-family: Microsoft Yahei, serif;
+  color: #333333;
+  background-color: #ffffff;
+  min-width: 1226px;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input {
+  font: normal;
+}
+
+input:focus,
+a:focus {
+  outline: none;
+}
+
+/**
+a 标签选择的颜色
+ */
+.cur {
+  color: #ff6600 !important;
+}
+
+/*
+  样式规范表
+*/
+/**
+ 鼠标悬浮浮动
+ */
+/**
+定位左边
+ */
+/**
+定位右边
+ */
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+a img {
+  width: 100%;
+  height: 100%;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+.header-logo {
+  display: inline-block;
+  width: 194px;
+  height: 81px;
+}
+.header-logo a {
+  display: inline-block;
+  width: 194px;
+  height: 81px;
+  background: url("./../../imgs/logo.png") no-repeat center;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=base.css.map */

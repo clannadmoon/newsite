@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/**
+ 鼠标悬浮浮动
+ */
+/**
+定位左边
+ */
+/**
+定位右边
+ */
+/*
+  样式规范表
+*/
+.header .nav-header {
+  background-color: #000000;
+}
+.header .nav-header .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 124px;
+}
+.header .nav-header .container:before,
+.header .nav-header .container:after {
+  content: none;
+}
+.header .nav-header .container .header-menu {
+  display: inline-block;
+  width: 700px;
+}
+.header .nav-header .container .header-menu div {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  margin-right: 43px;
+}
+.header .nav-header .container .header-menu div span {
+  cursor: pointer;
+}
+.header .nav-header .container .header-menu div span:hover {
+  border-bottom: 2px solid #ff0132;
+  padding-bottom: 5px;
+}
+.header .nav-header .container .header-menu div:last-child {
+  margin-right: 0;
+}
+.header .nav-header .container .header-menu .active {
+  border-bottom: 2px solid #ff0132;
+  padding-bottom: 5px;
+}
+
+.header .nav-header .container .header-menu .item-language {
+  margin-left: 40px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 0;
+}
+.header .nav-header .container .header-menu .item-language .languageText {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=navHeader.css.map */
