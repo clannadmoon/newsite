@@ -13,52 +13,55 @@
 */
 .header .nav-header {
   background-color: #000000;
+  padding-left: 18%;
+  padding-right: 40px;
 }
-.header .nav-header .container {
+.header .nav-header .nav-container {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 124px;
 }
-.header .nav-header .container:before,
-.header .nav-header .container:after {
+.header .nav-header .nav-container:before,
+.header .nav-header .nav-container:after {
   content: none;
 }
-.header .nav-header .container .header-menu {
+.header .nav-header .nav-container .header-menu {
   display: inline-block;
-  width: 700px;
+  /* width: 700px; */
 }
-.header .nav-header .container .header-menu div {
+.header .nav-header .nav-container .header-menu div {
   display: inline-block;
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
   margin-right: 43px;
 }
-.header .nav-header .container .header-menu div span {
+.header .nav-header .nav-container .header-menu div span {
   cursor: pointer;
 }
-.header .nav-header .container .header-menu div span:hover {
+.header .nav-header .nav-container .header-menu div span:hover {
   border-bottom: 2px solid #ff0132;
   padding-bottom: 5px;
 }
-.header .nav-header .container .header-menu div:last-child {
+.header .nav-header .nav-container .header-menu div:last-child {
   margin-right: 0;
 }
-.header .nav-header .container .header-menu .active {
+.header .nav-header .nav-container .header-menu .active {
   border-bottom: 2px solid #ff0132;
   padding-bottom: 5px;
 }
 
-.header .nav-header .container .header-menu .item-language {
-  margin-left: 40px;
+.header .nav-header .nav-container .header-menu .item-language {
+  margin-left: 180px;
   margin-top: 10px;
   font-weight: 400;
   font-size: 16px;
   margin-right: 0;
+  width: 100px;
 }
-.header .nav-header .container .header-menu .item-language .languageText {
+.header .nav-header .nav-container .header-menu .item-language .languageText {
   margin-top: 10px;
 }
 

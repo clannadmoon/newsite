@@ -13,15 +13,23 @@
   background: url("./../../imgs/contactUs/gywm.png") no-repeat center;
   background-size: auto;
 }
+
+.gywm_header .text-content {
+  margin-left: 18%;
+}
 .gywm_header h2 {
   margin: 0 !important;
   padding-top: 232px;
+
   font-size: 58px;
   color: #f5f3f3;
   font-weight: bold;
   line-height: 77px;
 }
 
+.gywm_ms .container {
+  max-width: 1200px;
+}
 .gywm_ms .container h2 {
   color: #ff0033 !important;
   margin: 0 !important;
@@ -57,6 +65,7 @@
 }
 .gywm_ms .container .address {
   margin-top: 47px;
+  margin-bottom: 57px;
 }
 .gywm_ms .container .address .address-item {
   width: calc((100% - 60px) / 3);
@@ -124,12 +133,14 @@
 .gywm__ry {
   background-color: #000000;
   position: relative;
+  display: flex;
+  flex-direction: row;
 }
 .gywm__ry .ry_left {
   height: 564px;
-  width: 100% - 941px;
+  width: 50%;
   color: #f3f3f3;
-  margin-right: 941px;
+  /* margin-right: 50%; */
   /* background-color: red; */
 }
 .gywm__ry .ry_left h2 {
@@ -165,15 +176,18 @@
   font-size: 40px;
 }
 .gywm__ry .ry_right {
-  position: absolute;
+  /* position: absolute;
   right: 0;
-  top: 0;
+  top: 0; */
   /* // float: right; */
+  width: 50%;
   display: inline-block;
-  width: 941px;
+  /* width: 941px; */
   height: 564px;
-  background: url("./../../imgs/contactUs/bg_bg.png") no-repeat center;
-  background-size: auto;
+  background-color: #fff;
+  background: url("./../../imgs/contactUs/bg_bg1_futian.png") no-repeat center;
+  /* background-size: auto; */
+  background-size: cover;
 }
 
 .btn {
@@ -193,6 +207,7 @@
 
 .gywm__zpgw .container {
   margin-bottom: 160px;
+  max-width: 1200px;
 }
 .gywm__zpgw .container h3 {
   font-size: 30px;
@@ -303,6 +318,10 @@
   background-color: #222222;
   padding: 170px 0;
 }
+.gywm_hzcx .container {
+  max-width: 1200px;
+}
+
 .gywm_hzcx .container h2 {
   font-size: 30px;
   font-weight: bold;

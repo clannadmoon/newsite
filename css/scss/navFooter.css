@@ -13,8 +13,10 @@
 */
 .footer {
   background-color: black;
+  z-index: 100;
 }
 .footer .container {
+  max-width: 1200px;
   text-align: center;
   padding-top: 73px;
   padding-bottom: 94px;

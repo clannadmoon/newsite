@@ -17,7 +17,7 @@ if (window.location.href.search("index.html") !== -1) {
     .getElementsByClassName("item-businessScope")[0]
     .classList.add("active");
 } else if (window.location.href.search("successfulCase.html") !== -1) {
-  //运营项目
+  //营运项目
   document
     .getElementsByClassName("item-successfulCase")[0]
     .classList.add("active");
@@ -43,10 +43,10 @@ $(".item-contactUs").click(function () {
 
 $(".item-language").click(function () {
   var text = $(".languageText").text();
-  if (text === "English") {
+  if (text === "ENGLISH") {
     $(".languageText").text("中文");
   } else {
-    $(".languageText").text("English");
+    $(".languageText").text("ENGLISH");
   }
 });
 

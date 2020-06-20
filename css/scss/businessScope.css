@@ -122,7 +122,7 @@ body {
 #businessScope .img_3:hover label,
 #businessScope .img_4:hover label {
   opacity: 1;
-  background: RGBA(206, 2, 44, 0.8);
+  background: RGBA(206, 2, 44, 0.6);
 }
 #businessScope .img_1:hover label h2,
 #businessScope .img_2:hover label h2,

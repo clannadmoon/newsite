@@ -13,6 +13,8 @@
 */
 #index {
   clear: left;
+  z-index: 10;
+  overflow: hidden;
 }
 #index .img_1,
 #index .img_2,
@@ -42,31 +44,66 @@
 #index .img_5 a,
 #index .img_6 a,
 #index .img_7 a {
-  /* position: absolute;
+  position: absolute;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0; */
+  bottom: 0;
+
+  width: 100%;
+  height: 194px;
   cursor: pointer;
   display: inline-block;
   opacity: 0;
 
+  background: RGBA(206, 2, 44, 0.7);
+}
+#index .img_6 a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+
   width: 100%;
   height: 100%;
-  background: RGBA(206, 2, 44, 0.9);
+  cursor: pointer;
+  display: inline-block;
+  opacity: 0;
+
+  background: RGBA(206, 2, 44, 0.7);
 }
 #index .img_1 a label,
 #index .img_2 a label,
 #index .img_3 a label,
 #index .img_4 a label,
 #index .img_5 a label,
-#index .img_6 a label,
 #index .img_7 a label {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 10%;
+  transform: translate(-10%, -10%);
+  width: 100%; */
+  height: 194px;
+  padding: 0px 10px 0px 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  cursor: pointer;
+}
+#index .img_6 a label {
+  /* position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-10%, -10%);
+  width: 100%; */
+  height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 #index .img_1 a label h2,
@@ -77,7 +114,8 @@
 #index .img_6 a label h2,
 #index .img_7 a label h2 {
   cursor: pointer;
-  font-size: 38px;
+  font-size: 36px;
+  margin-bottom: 30px;
   font-weight: 400;
   color: #ffffff;
 }
@@ -90,7 +128,10 @@
 #index .img_7 a label span {
   cursor: pointer;
   display: inline-block;
-  margin-top: 38px;
+  text-align: left;
+  cursor: pointer;
+  /* margin-top: 38px; */
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: 400;
   color: #ffffff;
@@ -103,7 +144,7 @@
 }
 #index .img_2 {
   float: left;
-  width: 66.6%;
+  width: 66.7%;
   height: 595px;
   background: url("./../../imgs/index/2.png") no-repeat center;
 }

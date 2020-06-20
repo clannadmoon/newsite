@@ -12,7 +12,7 @@
   <body>
     <div class="header">
       <div class="nav-header">
-        <div class="container">
+        <div class="nav-container">
           <div class="header-logo">
             <a href="./../pages/index.html"></a>
           </div>
@@ -27,13 +27,13 @@
               <span>业务范围</span>
             </div>
             <div class="item-successfulCase">
-              <span>运营项目</span>
+              <span>营运项目</span>
             </div>
             <div class="item-contactUs">
               <span>联系我们</span>
             </div>
             <div class="item-language">
-              <div class="languageText">English</div>
+              <div class="languageText">ENGLISH</div>
             </div>
           </div>
         </div>
@@ -41,7 +41,9 @@
     </div>
     <div class="gywm_header">
       <div class="container">
-        <h2>德行善举是惟一不败的投资</h2>
+        <div class="text-content">
+          <h2>德行善举是惟一不败的投资</h2>
+        </div>
       </div>
     </div>
     <div class="gywm_ms">
@@ -52,7 +54,7 @@
           >核心成员均来自国内外知名的资产管理机构和投研机构，投资管理经验丰富，
           具备理性务实的投资风格和优异的市场敏锐度。</span
         >
-        <p>分公司地址</p>
+        <p>办公地点</p>
         <div class="address">
           <div class="address-item active" data-name="深圳福田" data-type="1">
             <span class="icon-address"></span>
@@ -74,22 +76,21 @@
             <h3>广西东兴办公地点：</h3>
             <span>广西省东兴市北部湾国际海产品市场七号楼三层</span>
           </div>
-          <div class="address-item" data-name="香港" data-type="5">
-            <span class="icon-address"></span>
-            <h3>香港办公地点：</h3>
-            <span>香港湾仔分域街18号捷利中心11楼04室</span>
-          </div>
           <div class="address-item" data-name="北京朝阳" data-type="6">
             <span class="icon-address"></span>
             <h3>北京办公地点：</h3>
             <span>北京市朝阳区朝阳公园南路10号骏豪中央广场A1号楼14层</span>
+          </div>
+          <div class="address-item" data-name="香港" data-type="5">
+            <span class="icon-address"></span>
+            <h3>香港办公地点：</h3>
+            <span>香港湾仔分域街18号捷利中心11楼04室</span>
           </div>
           <div class="clear"></div>
         </div>
       </div>
     </div>
     <div class="gywm__ry">
-      <div class="ry_right"></div>
       <div class="ry_left">
         <iframe
           width="100%"
@@ -102,7 +103,7 @@
           src="./../components/nanshang_address.html"
         ></iframe>
       </div>
-
+      <div class="ry_right"></div>
       <div class="clear"></div>
     </div>
     <!-- <iframe
@@ -328,7 +329,7 @@
           </a>
           <a href="./../pages/aboutUs.html"><span>关于我们</span></a>
           <a href="./../pages/businessScope.html"><span>业务范围</span></a>
-          <a href="./../pages/successfulCase.html"><span>运营项目</span></a>
+          <a href="./../pages/successfulCase.html"><span>营运项目</span></a>
           <a href="./../pages/contactUs.html"><span>联系我们</span></a>
         </div>
         <div class="cutOffRule"></div>
@@ -376,6 +377,8 @@
         $(this).addClass("active").siblings().removeClass("active");
         $(".title").text($(this).attr("data-name"));
         $(".l_address").text($(this).children("span:last-child").text());
+
+        //处理地图选点
         let url = "";
         switch ($(this).attr("data-type")) {
           case "1":
@@ -398,6 +401,37 @@
             break;
         }
         $("#ns_iframe").attr("src", url);
+
+        // 处理图片展示
+        let cssStr = "";
+        switch ($(this).attr("data-type")) {
+          case "1":
+            cssStr =
+              "url('./../../imgs/contactUs/bg_bg1_futian.png') no-repeat center";
+            break;
+          case "2":
+            cssStr =
+              "url('./../../imgs/contactUs/bg_bg2_nanshan.png') no-repeat center";
+            break;
+          case "3":
+            cssStr =
+              "url('./../../imgs/contactUs/bg_bg3-dongwan.png') no-repeat center";
+            break;
+          case "4":
+            cssStr =
+              "url('./../../imgs/contactUs/bg_bg4_dongxing.png') no-repeat center";
+            break;
+          case "5":
+            cssStr =
+              "url('./../../imgs/contactUs/bg_bg5_beijing.png') no-repeat center";
+            break;
+          case "6":
+            cssStr =
+              "url('./../../imgs/contactUs/bg_bg6_xiangguang.png') no-repeat center";
+            break;
+        }
+
+        $(".ry_right").css("background", cssStr);
       });
 
       $(".icon-close").click(function () {
