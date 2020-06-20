@@ -12,6 +12,7 @@
   样式规范表
 */
 .footer {
+  width: 100%;
   background-color: black;
   z-index: 100;
   display: flex;
@@ -24,6 +25,7 @@
   text-align: center;
   padding-top: 73px;
   padding-bottom: 94px;
+  margin: 0 auto;
 }
 .footer .container .social {
   margin-bottom: 43px;
