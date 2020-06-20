@@ -2,7 +2,7 @@
  * @Description: 这里输入文件功能
  * @Author: zhoupeng
  * @Date: 2020-02-26 17:55:38
- * @LastEditTime: 2020-05-17 19:49:22
+ * @LastEditTime: 2020-06-20 09:20:27
  */
 
 //首页
@@ -17,7 +17,7 @@ if (window.location.href.search("index.html") !== -1) {
     .getElementsByClassName("item-businessScope")[0]
     .classList.add("active");
 } else if (window.location.href.search("successfulCase.html") !== -1) {
-  //营运项目
+  //运营项目
   document
     .getElementsByClassName("item-successfulCase")[0]
     .classList.add("active");
