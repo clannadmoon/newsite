@@ -2,7 +2,7 @@
  * @Description: 这里输入文件功能
  * @Author: zhoupeng
  * @Date: 2020-02-26 17:55:38
- * @LastEditTime: 2020-06-20 09:20:27
+ * @LastEditTime: 2020-06-21 09:25:30
  */
 
 //首页
@@ -42,11 +42,11 @@ $(".item-contactUs").click(function () {
 });
 
 $(".item-language").click(function () {
-  var text = $(".languageText").text();
+  var text = $(this, ".languageText").text();
   if (text === "ENGLISH") {
-    $(".languageText").text("中文");
+    $(this, ".languageText").text("中文");
   } else {
-    $(".languageText").text("ENGLISH");
+    $(this, ".languageText").text("ENGLISH");
   }
 });
 

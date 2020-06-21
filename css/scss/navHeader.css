@@ -24,6 +24,7 @@
 .header .nav-header .nav-container {
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 124px;
@@ -33,7 +34,11 @@
   content: none;
 }
 .header .nav-header .nav-container .header-menu {
-  display: inline-block;
+  /* display: inline-block; */
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   /* width: 700px; */
 }
 .header .nav-header .nav-container .header-menu div {
@@ -62,14 +67,14 @@
 
 .header .nav-header .nav-container .header-menu .item-language {
   margin-left: 180px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   margin-right: 0;
   width: 100px;
 }
 .header .nav-header .nav-container .header-menu .item-language .languageText {
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 .header .nav-header .nav-container .header-menu .item-language .languageText {
   cursor: pointer;
