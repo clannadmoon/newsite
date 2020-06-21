@@ -11,7 +11,7 @@
 .gywm_header {
   height: 677px;
   background: url("./../../imgs/contactUs/gywm.png") no-repeat center;
-  background-size: auto;
+  background-size: cover;
 }
 
 .gywm_header .text-content {
