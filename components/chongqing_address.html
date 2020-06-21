@@ -2,7 +2,7 @@
  * @Description: 这里输入文件功能
  * @Author: zhoupeng
  * @Date: 2020-02-19 14:23:48
- * @LastEditTime: 2020-06-21 13:34:23
+ * @LastEditTime: 2020-06-21 14:55:18
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +21,27 @@
         height: 100%;
         margin: 0px;
       }
+      .amap-marker-label {
+        border: 0px;
+        padding: 0;
+      }
+      .info {
+        height: 40px;
+        padding: 0 10px;
+        background-color: #e11f41;
+        border-radius: 6px;
+        opacity: 0.6;
+        line-height: 45px;
+        text-align: center;
+      }
+      .info span {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        line-height: 17px;
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
     </style>
     <title>香港办公地点</title>
   </head>
@@ -36,10 +57,14 @@
         var marker = new AMap.Marker({
           position: new AMap.LngLat(114.189715, 22.276969),
           offset: new AMap.Pixel(-10, -100),
-          icon: "./../imgs/contactUs/dingwei6.png", // 添加 Icon 图标 URL
+          //icon: "./../imgs/contactUs/dingwei6.png", // 添加 Icon 图标 URL
           title: "香港办公地点"
         });
-
+        marker.setLabel({
+          offset: new AMap.Pixel(6, -40), //设置文本标注偏移量
+          content: "<div class='info'><span>香港办公地点</span></div>", //设置文本标注内容
+          direction: "right" //设置文本标注方位
+        });
         map.add(marker);
       };
     </script>

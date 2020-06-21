@@ -1,38 +1,77 @@
-<!doctype html>
+<!--
+ * @Description: 这里输入文件功能
+ * @Author: zhoupeng
+ * @Date: 2020-02-19 14:24:50
+-->
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, width=device-width"
+    />
     <style type="text/css">
-        body,html,#container{
-            width: 100%;
-            height: 100%;
-            margin: 0px
-        }
+      body,
+      html,
+      #container {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+      }
+      .amap-marker-label {
+        border: 0px;
+        padding: 0;
+      }
+      .info {
+        height: 40px;
+        padding: 0 10px;
+        background-color: #e11f41;
+        border-radius: 6px;
+        opacity: 0.6;
+        line-height: 45px;
+        text-align: center;
+      }
+      .info span {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        line-height: 17px;
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
     </style>
     <title>北京办公地点</title>
-</head>
-<body>
-<div id="container" tabindex="0"></div>
-<!--<script src="https://webapi.amap.com/js/require.js" data-main="./require-init"></script>-->
-<script type="text/javascript">
-    window.init = function(){
-        var map = new AMap.Map('container',{
-            center:[116.477155,39.932108],
-            zoom: 9999, //设置地图的缩放级别
+  </head>
+  <body>
+    <div id="container" tabindex="0"></div>
+    <!--<script src="https://webapi.amap.com/js/require.js" data-main="./require-init"></script>-->
+    <script type="text/javascript">
+      window.init = function () {
+        var map = new AMap.Map("container", {
+          center: [116.477155, 39.932108],
+          zoom: 9999 //设置地图的缩放级别
         });
         var marker = new AMap.Marker({
-            position: new AMap.LngLat(116.477155,39.932108),
-            offset: new AMap.Pixel(-10, -100),
-            icon: './../imgs/contactUs/dingwei7.png', // 添加 Icon 图标 URL
-            title: '北京办公地点'
+          position: new AMap.LngLat(116.477155, 39.932108),
+          offset: new AMap.Pixel(-10, -100),
+          // icon: "./../imgs/contactUs/dingwei7.png", // 添加 Icon 图标 URL
+          title: "北京办公地点"
+        });
+
+        // 设置label标签
+        // label默认蓝框白底左上角显示，样式className为：amap-marker-label
+        marker.setLabel({
+          offset: new AMap.Pixel(6, -40), //设置文本标注偏移量
+          content: "<div class='info'><span>北京办公地点</span></div>", //设置文本标注内容
+          direction: "right" //设置文本标注方位
         });
 
         map.add(marker);
-    }
-</script>
-<script src="https://webapi.amap.com/maps?v=1.4.15&key=933238f70194c0578b3bf81015e2725b&callback=init"></script>
-
-</body>
+        map.add(marker);
+      };
+    </script>
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=933238f70194c0578b3bf81015e2725b&callback=init"></script>
+  </body>
 </html>

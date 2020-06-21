@@ -1,3 +1,8 @@
+<!--
+ * @Description: 这里输入文件功能
+ * @Author: zhoupeng
+ * @Date: 2020-02-19 13:37:46
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,6 +20,27 @@
         height: 100%;
         margin: 0px;
       }
+      .amap-marker-label {
+        border: 0px;
+        padding: 0;
+      }
+      .info {
+        height: 40px;
+        padding: 0 10px;
+        background-color: #e11f41;
+        border-radius: 6px;
+        opacity: 0.6;
+        line-height: 45px;
+        text-align: center;
+      }
+      .info span {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        line-height: 17px;
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
     </style>
     <title>深圳南山办公地点</title>
   </head>
@@ -30,8 +56,16 @@
         var marker = new AMap.Marker({
           position: new AMap.LngLat(113.992939, 22.587933),
           offset: new AMap.Pixel(-10, -100),
-          icon: "./../imgs/contactUs/dingwei3.png", // 添加 Icon 图标 URL
+          // icon: "./../imgs/contactUs/dingwei3.png", // 添加 Icon 图标 URL
           title: "深圳南山办公地点"
+        });
+
+        // 设置label标签
+        // label默认蓝框白底左上角显示，样式className为：amap-marker-label
+        marker.setLabel({
+          offset: new AMap.Pixel(6, -40), //设置文本标注偏移量
+          content: "<div class='info'><span>深圳南山办公地点</span></div>", //设置文本标注内容
+          direction: "right" //设置文本标注方位
         });
 
         map.add(marker);

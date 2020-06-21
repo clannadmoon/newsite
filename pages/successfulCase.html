@@ -12,6 +12,78 @@
     />
     <link rel="stylesheet" type="text/css" href="./../css/scss/navFooter.css" />
     <link rel="stylesheet" type="text/css" href="./../css/scss/navHeader.css" />
+    <style>
+      .imgbox {
+	width:640px;
+	height:220px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+}
+.imgbox li {
+	width:150px;
+	height:100px;
+	margin:10px 0px 0px 10px;
+	float:left;
+}
+.imgbox li img {
+	width:100%;
+	height:100%;
+	display:block;
+}
+.showimg {
+	width:600px;
+	height:400px;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	margin:auto;
+	bottom:0;
+	background:#fff;
+	box-shadow:0px 0px 0px 1000px rgba(0,0,0,0.7);
+	z-index:10;
+	transform:scale(0,0);
+	transition:transform 1s;
+}
+.showimg  img {
+	width:100%;
+	height:100%;
+}
+.btnL,.btnR {
+	width:100px;
+	height:200px;
+	position:absolute;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+.btnL {
+	background:url(http://www.jq22.com/demo/jqueryWflbt201803192258/images/left2.png);
+	background-size:100px 200px;
+	left:0;
+}
+.btnR {
+	background:url(http://www.jq22.com/demo/jqueryWflbt201803192258/images/right2.png);
+	background-size:100px 200px;
+	right:0;
+}
+.close {
+	width:50px;
+	height:50px;
+	background:url(http://www.jq22.com/tp/45f352e9-fc7f-44ed-9990-2a100a0c422b.png);
+	background-size:50px 50px;
+	border-radius:50%;
+	position:absolute;
+	right:-25px;
+	top:-25px;
+}
+body .active {
+	transform:scale(1,1);
+}
+
+    </style>
   </head>
   <body>
     <div class="header">
@@ -234,63 +306,9 @@
                   <img src="./../imgs/successfulCaseNew/jmrh_small_9.jpg" alt="" />
                 </div>  
             </div>
-        
-              <!-- <div class="wrapper wrapper_show">
-                <p>
-                  2018年国家主席习主席书记重要批示，支持香港成为国际创科中心。随着大湾区规划推进，社会各界对大湾区的期望和参与热情与日俱增，纷纷寄语香港把握大湾区建设的历史机遇，善用中央惠港科技政策的“东风”，为本港创科发展注入强大动力，创造经济增长新动力。
-                </p>
-                <img src="./../imgs/successfulCase/11.jpg" alt="" />
-                <p>
-                  同年五月，习主席对24名在港两院院士来信作出重要批示，支持香港成为国际创新科技中心，为建设科技强国贡献力量，并着有关部门迅速做好贯彻落实工作，有序推进两地相关合作安排。
-                </p>
-                <img src="./../imgs/successfulCase/12.jpg" alt="" />
-                <p>
-                  习主席的重要批示为香港科技界带来极大鼓舞，有份联署的中国科学院院士、港科院院长徐立之表示，大湾区的运作模式，包括世界尖端的高等学府，加上研究、生产的基地，上中下游都有“包办”，完美地将香港的科研成果，与大湾区的生产能力无缝接轨，有信心香港能在粤港澳大湾区中担任创科龙头角色。促进香港同内地加强科技合作，支持香港成为国际创新科技中心，发挥内地和香港各自的科技优势，为香港和内地经济发展、民生改善作出贡献，是在香港实行“一国两制”的题中应有之义。
-                </p>
-                <img src="./../imgs/successfulCase/13.jpg" alt="" />
-                <p>
-                  香港拥有较雄厚的科技基础，拥有众多爱国爱港的高素质科技人才，这是我国实施创新驱动发展战略、建设创新型国家的一支重要力量。要重视香港院士来信反映的问题，抓紧研究制定具体政策，合理予以解决，以支持香港科技界为我们建设科技强国、为实现中华民族伟大复兴贡献力量。
-                </p>
-                <img src="./../imgs/successfulCase/14.jpg" alt="" />
-                <p>
-                  集团于2016年意识到香港近二十年来的发展主要以金融及地产为主，但随著国家的高速发展，深圳特区的GDP透过高科技发展亦追贴香港，有快将超越之势；集团开展了首个以科技产业地产为主题的项目，集团取名为“创科港”。经过一年多的研究，在香港寸尺土之地，要发展产业地产成本实属过高，只能另辟途径，研究香港农地发展产业地产的可行性。但香港农地大部份已由四大发展商持有，集团项目团队在不断努力下，发掘到香港一个特殊地方并没有出售给香港地产商或任何投资者；此处正正位于香港与深圳连接的第七个口岸
-                  － 莲塘口岸附近。
-                </p>
-                <p>
-                  从深圳莲塘口岸过关到香港，步行10分钟便可到达香港国际创新科技中心；项目首期为20公顷(20万平方米)，总规划为60公顷，是香港有史以来最大的农地收购。集团的高瞻远瞩，正正能配合香港政府的计划及国家的支持，将此地块打做成大湾区国际创科中心，在收地的同时集团已获中国科学院国科金服、清华大学信息技術研究院、清華大學互聯網產業硏究院、国研智库等多个著名科研机构签定合作意向，为香港引进国内外的高新科技企业，吸纳全球科研人材；园区的设计以智能城市为主题，为科研工作人员提供全方位的商业娱乐及居住配套。香港政府当局披露，本项目地为政府锐意发展的全新地区，预计发展总面积为720公顷，可容纳25.2万-35.5万人口，提供9.4万-13万个住宅单位，以及21.5万就业岗位。
-                </p>
-              </div>
-              <div class="wrapper">
-                <p>
-                  2018年国家主席习主席书记重要批示，支持香港成为国际创科中心。随着大湾区规划推进，社会各界对大湾区的期望和参与热情与日俱增，纷纷寄语香港把握大湾区建设的历史机遇，善用中央惠港科技政策的“东风”，为本港创科发展注入强大动力，创造经济增长新动力。
-                </p>
-              </div>
-              <div class="wrapper">
-                <p>
-                  为国际创科中心。随着大湾区规划推进，社会各界对大湾区的期望和参与热情与日俱增，纷纷寄语香港把握大湾区建设的历史机遇，善用中央惠港科技政策的“东风”，为本港创科发展注入强大动力，创造经济增长新动力。
-                </p>
-              </div>
-              <div class="wrapper">
-                <p>
-                  的期望和参与热情与日俱增，纷纷寄语香港把握大湾区建设的历史机遇，善用中央惠港科技政策的“东风”，为本港创科发展注入强大动力，创造经济增长新动力。
-                </p>
-              </div>
-              <div class="wrapper">
-                <p>
-                  湾区建设的历史机遇，善用中央惠港科技政策的“东风”，为本港创科发展注入强大动力，创造经济增长新动力。
-                </p>
-              </div>
-              <div class="wrapper">
-                <p>
-                  科技政策的“东风”，为本港创科发展注入强大动力，创造经济增长新动力。
-                </p>
-              </div>
-              <div class="wrapper">
-                <p>
-                  创造经济增长新动力。
-                </p>
-              </div> -->
+
           </div>
+          
            <!---电子商贸--->
            <div class="wrapperContainer">
             <div class="wrapperLeftContainer">
@@ -433,6 +451,13 @@
         </div>
       </div>
     </div>
+
+    <div class="showimg">
+      <img src="" alt="">
+      <div class="btnL"></div>
+      <div class="btnR"></div>
+      <div class="close"></div>
+  </div>
     <script type="text/javascript" src="./../js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="./../js/navHeader.js"></script>
     <script>
@@ -457,12 +482,6 @@
       }
 
       $(".box_ul").on("click", "li", function () {
-        //只需要找到你点击的是哪个ul里面的就行
-        // $(".wrapper").eq($(this).index()).addClass("wrapper_show");
-        // $(".wrapper")
-        //   .eq($(this).index())
-        //   .siblings()
-        //   .removeClass("wrapper_show");
         $(".wrapperContainer").eq($(this).index()).addClass("wrapperContainerShow");
         $(".wrapperContainer")
           .eq($(this).index())
@@ -475,8 +494,43 @@
       });
       $(".center_image_box .img").mouseover(function(e){
         var $imgSrc=$(this).attr('href');
-        
       })
+
+      //点击小图，显示大图
+      var imgbox = $('.imgbox');
+      var lise = $('li', imgbox);
+      var show = $('.showimg');
+      var leftbtn = $('.btnL');
+      var rightbtn = $('.btnR');
+      var close = $('.close');
+      var num = 0;
+      $(document).ready(function() {
+        var num = $(this).index();
+          lise.on('click', function() {
+          var src = $('img', this).prop('src');
+          $('img', show).prop('src', src);
+          show.addClass('active');
+      })
+      close.click(function() {
+        show.removeClass('active');
+      })
+      rightbtn.click(function() {
+        num++;
+        if (num >= lise.length) {
+            num = 0;
+        }
+        var url = lise.eq(num).find('img').prop('src');
+        $('img', show).prop('src', url);
+      })
+      leftbtn.click(function() {
+        num--;
+        if (num <= 0) {
+            num = lise.length;
+        }
+        var url = lise.eq(num).find('img').prop('src');
+        $('img', show).prop('src', url);
+    })
+})
     </script>
   </body>
 </html>
